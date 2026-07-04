@@ -8,19 +8,19 @@
     body { 
       font-family: Arial, sans-serif; 
       margin: 0; 
-      padding: 40px 20px; 
+      padding: 20px; 
       background: #0a0a0a; 
       color: #fff; 
       text-align: center; 
     }
-    .logo { max-width: 280px; margin: 20px auto; border-radius: 20px; box-shadow: 0 10px 30px rgba(255,215,0,0.4); }
-    h1 { color: #ffd700; font-size: 2.8em; margin: 20px 0 10px; }
-    h2 { color: #ccc; margin-bottom: 40px; }
+    .logo { max-width: 280px; margin: 20px auto; }
+    h1 { color: #ffd700; font-size: 2.8em; margin: 10px 0; }
+    h2 { color: #ddd; margin-bottom: 30px; }
     .card { 
       background: #1a1a1a; 
       border: 2px solid #ffd700; 
       border-radius: 20px; 
-      padding: 30px; 
+      padding: 25px; 
       margin: 25px auto; 
       max-width: 520px; 
     }
@@ -28,12 +28,30 @@
     .cta { 
       background: #ffd700; 
       color: #000; 
-      padding: 18px 50px; 
+      padding: 15px 40px; 
       border-radius: 50px; 
       font-weight: bold; 
       display: inline-block; 
-      margin: 40px 0; 
-      font-size: 1.2em; 
+      margin: 30px 0; 
+    }
+    form { max-width: 500px; margin: 40px auto; }
+    input, textarea { 
+      width: 100%; 
+      padding: 12px; 
+      margin: 10px 0; 
+      background: #222; 
+      border: 1px solid #ffd700; 
+      color: #fff; 
+      border-radius: 8px; 
+    }
+    button { 
+      background: #ffd700; 
+      color: #000; 
+      padding: 15px 40px; 
+      border: none; 
+      border-radius: 50px; 
+      font-weight: bold; 
+      cursor: pointer; 
     }
   </style>
 </head>
@@ -55,6 +73,7 @@
     <p>Weekly check-ins, progress tracking, plan adjustments, and ongoing support</p>
   </div>
 
-  <a href="#" class="cta">DM "READY" TO START YOUR TRANSFORMATION</a>
-</body>
-</html>
+  <h2 style="margin: 40px 0 20px;">Interested? Fill out the form below</h2>
+  <form action="https://formspree.io/f/your-form-id" method="POST">
+    <input type="text" name="name" placeholder="First & Last Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number
